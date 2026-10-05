@@ -1,0 +1,18 @@
+name = "azkar-guard-api"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+# Send due reminders every minute (the Free plan allows 5 cron triggers per account).
+[triggers]
+crons = ["* * * * *"]
+
+[vars]
+VAPID_SUBJECT = "https://github.com/azkar-guard"
+ALLOWED_ORIGINS = "https://azkar-guard.pages.dev,http://localhost:5173,http://localhost:4173"
+
+# Created by azkar-guard-infra (cloudflare_d1_database.api); the id comes from its output.
+[[d1_databases]]
+binding = "DB"
+database_name = "azkar-guard"
+database_id = "958e37a9-beaf-40c4-bc70-b77a9da9e536"
+migrations_dir = "migrations"
