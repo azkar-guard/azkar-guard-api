@@ -14,5 +14,5 @@ ALLOWED_ORIGINS = "https://azkar-guard.pages.dev,http://localhost:5173,http://lo
 [[d1_databases]]
 binding = "DB"
 database_name = "azkar-guard"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "958e37a9-beaf-40c4-bc70-b77a9da9e536"
 migrations_dir = "migrations"
